@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Portfolio of Shane Camp II. Full-Stack Web Developer with extensive experience in building modern web applications."/>
+        <meta name="keywords" content="web development, portfolio, Shane Camp II, front-end, back-end, full-stack"/>
+        <title>Shane Camp II - Portfolio</title>
+        <link rel="icon" href="./images/mindofperry favicon 16x16.png" type="image/x-icon" />
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <script type="application/ld+json">
+            {
+            "@context": "http://schema.org",
+            "@type": "Person",
+            "name": "Shane Camp II",
+            "url": "http://www.mindofperry.com",
+            "sameAs": [
+                "https://www.linkedin.com/in/shanecampii/",
+                "https://github.com/mindofperry"
+            ]
+            }
+        </script>
+
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div id="loader" class="loader">
+            Loading...
+        </div>
+
+        <header>
+            <div class="container">              
+                <h1>Shane Camp II</h1>
+                <nav>
+                    <a href="#"><button id="darkModeToggle">Dark Mode</button></a>
+                    <a href="#about">About Me</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#awards">Recognition</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </header>
+
+        <section id="about" class="container">
+                <h2>About Me</h2>
+                <img class="profile-picture" src="./images/Photo of Shane Camp II.jpeg" alt="Photo of Shane Camp II" width="100px">
+                <p>Results-driven experienced Support Operations Expert and Management professional with over 7 years experience in the industry. Junior Full-Stack Web Developer with certifications and training from IBM, Python Institute, Udemy, LinkedIn, HackerRank, and CompTIA. I'm always on the lookout to learn, innovate, and design solutions that not only streamline processes but also add a touch of fun and utility.</p>
+        </section>
+
+        <section id="portfolio" class="container">
+            <h2>Portfolio</h2>
+            <div class="grid">
+                <div class="project">
+                    <img src="./images/mindofperry portfolio logo image.svg" alt="MindofPerry Portfolio Logo Image" width="75px"/>
+                    <h3>Development Projects</h3>
+                    <p>I've put together a few projects on GitHub during my self-taught experience and education from LinkedIn Learning, Coursera, Udemy, and others. Check them out by clicking the link below.</p>
+                    <a href="https://github.com/mindofperry/" target="_blank" class="view-repo-button">View Repositories</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="container">
+            <h2>Skills</h2>
+            <div class="grid">
+                <p class="skills-item"><i class="fas fa-code"></i> HTML</p>
+                <p class="skills-item"><i class="fas fa-palette"></i> CSS</p>
+                <p class="skills-item"><i class="fab fa-python"></i> Python</p>
+                <p class="skills-item"><i class="fab fa-js"></i> JavaScript</p>
+                <p class="skills-item"><i class="fab fa-jira"></i> Atlassian Jira</p>
+                <p class="skills-item"><i class="fas fa-chart-line"></i> Operations Process Improvement</p>
+                <p class="skills-item"><i class="fas fa-puzzle-piece"></i> Complex Problem Solving</p>
+                <p class="skills-item"><i class="fas fa-file-alt"></i> Technical Writing</p>
+            </div>
+        </section>
+
+        <section id="awards" class="container">
+            <h2>Awards & Recognitions</h2>
+            <blockquote>I hope to display any awards/recognition I received here someday.</blockquote>
+        </section>
+
+        <section id="testimonials" class="container">
+            <h2>Testimonials</h2>
+            <blockquote>This is where I'll display my testimonials when I receive them.</blockquote>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <p>If you have any feedback, would like to leave a testimonial, or you would like to hire me;<span class="break"> <br></span> please contact me directly or use the contact form below.</p>
+            <form action="CONTACT_FORM_ENDPOINT" method="post">
+                <label for="name">Name:</label>
+                <input type="text" name="name" required pattern="^[a-zA-Z\s'-]+$" title="Please enter a valid name. Names should contain letters and can include spaces, hyphens, or apostrophes." placeholder="Enter Your Name">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" required placeholder="Enter Your Email" title="Please enter a valid email address. Ex: 'example@example.com'" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required placeholder="Type Your Message Here" title="Please enter the message you would like to send."></textarea>
+
+                <div class="g-recaptcha" data-sitekey="RECAPTCHA_SITE_KEY"></div>
+                <input type="submit" value="Send" />
+            </form>
+            <p>
+                <a class="github-link" href="https://github.com/mindofperry" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a class="linkedin-link" href="https://linkedin.com/in/shanecampii" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </p>
+            
+            <div id="confirmationModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <h2>Contact Shane</h2>
+                    <p>Are you ready to send this message?</p>
+                    <button id="confirmSend">Yes!</button>
+                    <button id="cancelSend">Not Yet.</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>
+                &copy; 2023 Shane Camp II. All rights reserved. Developed with
+                <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i>.
+            </p>
+        </footer>
+
+        <button id="backToTop" class="back-to-top">↑</button>
+    </body>
+</html>
