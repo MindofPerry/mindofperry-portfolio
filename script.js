@@ -64,23 +64,3 @@ navLinks.forEach(link => {
         nav.classList.remove("active");
     });
 });
-
-// --- Modal Contact Popup Message ---
-const modal = document.getElementById('confirmationModal');
-const confirmSendButton = document.getElementById('confirmSend');
-const cancelSendButton = document.getElementById('cancelSend');
-const form = document.querySelector('form');
-
-form.addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent the form from submitting
-    modal.style.display = 'flex';
-});
-
-confirmSendButton.addEventListener('click', function() {
-    modal.style.display = 'none';
-    form.submit(); // Now, submit the form
-});
-
-cancelSendButton.addEventListener('click', function() {
-    modal.style.display = 'none';
-});
