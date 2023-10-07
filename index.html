@@ -24,6 +24,7 @@
             }
         </script>
 
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <script src="script.js" defer></script>
     </head>
 
@@ -106,6 +107,8 @@
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required placeholder="Type Your Message Here" title="Please enter the message you would like to send."></textarea>
+
+                <div class="g-recaptcha" data-sitekey="6LdrOYQoAAAAAAluFK5DHcDLjaoV8nN_jZax7Lds"></div>
 
                 <input type="submit" value="Send" />
             </form>
