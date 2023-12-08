@@ -19,6 +19,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const darkModeToggle = document.getElementById('darkModeToggle');
 darkModeToggle.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
+
+    document.querySelectorAll('.view-repo-button, .testimonial-button, input[type="submit"]').forEach(button => {
+        button.classList.toggle('dark-mode-text');
+    });
 });
 
 // --- Loader ---

@@ -136,7 +136,19 @@ section {
     border-width: 2px;
     background: linear-gradient(to right, #3D9D8699, #100DA699);
     text-decoration: none;
-    color: black;
+    color: #000;
+    font-weight: bold;
+    margin-top: 30px;
+    display: inline-block;
+    margin-top: 0;
+}
+
+.testimonial-button {
+    padding: .6rem;
+    border-width: 2px;
+    background: linear-gradient(to right, #3D9D8699, #100DA699);
+    text-decoration: none;
+    color: #000;
     font-weight: bold;
     margin-top: 30px;
     display: inline-block;
@@ -166,10 +178,12 @@ footer {
     padding: 20px 20px;
 }
 
-blockquote {
-    border-left: 4px solid #333;
-    padding-left: 20px;
+.testimonial-message {
     font-style: italic;
+}
+
+#testimonial-person {
+    font-weight: 300;
 }
 
 @media screen and (min-width: 768px) {
@@ -195,7 +209,8 @@ input, textarea {
 input[type="submit"] {
     cursor: pointer;
     background: linear-gradient(to right, #3D9D8699, #100DA699);
-    color: #fff;
+    color: #000;
+    font-weight: bold;
     border: none;
     padding: 10px 20px;
     transition: background-color 0.3s;
@@ -205,6 +220,10 @@ input[type="submit"]:hover {
     background-color: #3D9D86;
 }
 
+input[type="submit"].dark-mode-text {
+    color: #fff;
+}
+
 body.dark-mode {
     background-color: #333;
     color: #fff;
@@ -212,6 +231,10 @@ body.dark-mode {
 
 body.dark-mode header, body.dark-mode footer {
     background-color: #222;
+}
+
+.dark-mode-text {
+    color: #fff;
 }
 
 .loader {
