@@ -6,7 +6,28 @@
         <meta name="description" content="Portfolio of Shane Camp II. Full-Stack Web Developer with extensive experience in building modern web applications."/>
         <meta name="keywords" content="web development, portfolio, Shane Camp II, front-end, back-end, full-stack"/>
         <title>Shane Camp II - Portfolio</title>
-        <link rel="icon" href="./images/mindofperry favicon.png" type="image/png" />
+        <link rel="icon" href="./images/PNG/mindofperry_favicon.png" type="image/png" />
+
+        <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                color: #333;
+                transition: background-color 0.3s, color 0.3s;
+            }
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 15px 0;
+                text-align: center;
+                position: sticky;
+                top: 0;
+                z-index: 100;
+            }
+        </style>
+
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -56,11 +77,15 @@
 
         <section id="about" class="container">
                 <h2>About Me</h2>
-                <img class="profile-picture" src="./images/Photo of Shane Camp II.jpeg" alt="Photo of Shane Camp II" width="100px">
-                <p>With nearly 8 years of diverse experience in Operations Support, Team Leadership, and IT Services, I blend customer service acument with software development skills.</p>
+                <picture>
+                    <source srcset="./images/WEBP/Photo_of_Shane.webp" type="image/webp">
+                    <source srcset="./images/JPEG/Photo_of_Shane.jpeg" type="image/jpeg">
+                    <img class="profile-picture" src="./images/JPEG/Photo_of_Shane.jpeg" alt="Photo of Shane" width="100px">
+                </picture>
+                <p>With nearly 8 years of diverse experience in Operations Support, Team Leadership, and IT Services, I blend customer service acumen with software development skills.</p>
                 <p>Proficient in HTML, CSS, Python, JavaScript, and a range of tools including Google Sheets, Jira, JQL, SQL, and Slack Workflows.</p>
-                <p>Additionally, my certifications from <a id="no-deco" href="https://www.coursera.org/account/accomplishments/verify/5FQNFH2PA3XV">IBM</a>, <a id="no-deco" href="https://pythoninstitute.org/pcep">Python Institute</a>, <a id="no-deco" href="https://www.udemy.com/certificate/UC-cc9e4c96-3586-4c6e-ba73-5ccbddf1816c/">Udemy</a>, <a id="no-deco" href="https://www.credly.com/badges/085a27ce-6df7-4782-9f40-3ed2d827ad11">CompTIA</a> and more, attest to my commitment to continuous learning and innovation.</p>
-                <p>My passion for game development extends to Unreal Engine 5, where I am actively engage in both learning and practical application, evident in my latest project, Plate Hopper.</p>
+                <p>Additionally, my certifications from <a id="no-deco" href="https://www.coursera.org/account/accomplishments/verify/5FQNFH2PA3XV">IBM</a>, <a id="no-deco" href="https://www.credly.com/badges/4cf32117-0922-485f-a2c9-5ceac8500674">Python Institute</a>, <a id="no-deco" href="https://www.udemy.com/certificate/UC-cc9e4c96-3586-4c6e-ba73-5ccbddf1816c/">Udemy</a>, <a id="no-deco" href="https://www.credly.com/badges/085a27ce-6df7-4782-9f40-3ed2d827ad11">CompTIA</a>, and more attest to my commitment to continuous learning and innovation.</p>
+                <p>My passion for game development extends to Unreal Engine 5, where I am actively engaged in both learning and practical application, evident in my latest project, Plate Hopper.</p>
                 <p>My projects, such as the Shopify E-commerce for Golden Roller Skates, highlight my ability to craft user-centric solutions and enhance digital impact through strategic design and development initiatives.</p>
         </section>
 
@@ -68,13 +93,21 @@
             <h2>Portfolio</h2>
             <div class="grid">
                 <div class="project">
-                    <img src="./images/mindofperry portfolio logo image.svg" alt="MindofPerry Portfolio Logo Image" width="75px"/>
+                    <picture>
+                        <source srcset="./images/WEBP/mindofperry_portfolio_logo.webp" type="image/webp">
+                        <source srcset="./images/JPEG/mindofperry_portfolio_logo.jpeg" type="image/jpeg">
+                        <img src="./images/JPEG/mindofperry_portfolio_logo.jpg" alt="MindofPerry Portfolio Logo" width="75px" loading="lazy"/>
+                    </picture>
                     <h3>GitHub</h3>
                     <p>I've put together a few projects on GitHub during my self-taught experience and education from LinkedIn Learning, Coursera, Udemy, and others. Check them out by clicking the link below.</p>
                     <a href="https://github.com/mindofperry/" target="_blank" class="view-repo-button">View Repositories</a>
                 </div>
                 <div class="project">
-                    <img src="./images/Plate Hopper Logo.png" alt="Plate Hopper Game Icon" width="75px"/>
+                    <picture>
+                        <source srcset="./images/WEBP/Plate_Hopper_Logo.webp" type="image/webp">
+                        <source srcset="./images/PNG/Plate_Hopper_Logo.png" type="image/png">
+                        <img src="./images/PNG/Plate_Hopper_Logo.png" alt="Plate Hopper Game Icon" width="75px" loading="lazy"/>
+                    </picture>
                     <h3>Indie Game Development</h3>
                     <p>Check out my portfolio of games I've made in Unreal Engine 5 on itch.io</p>
                     <a href="https://mindofperry.itch.io/" target="_blank" class="view-repo-button">View My Games</a>
@@ -124,7 +157,11 @@
                     <div class="testimonial-container">
                         <div class="testimonial">
                             <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                                <img src="./images/Golden Roller Skates Logo PNG.png" alt="Golden Roller Skates Logo" width="75px">
+                                <picture>
+                                    <source srcset="./images/WEBP/Golden_Roller_Skates_Logo.webp" type="image/webp">
+                                    <source srcset="./images/PNG/Golden_Roller_Skates_Logo.png" type="image/png">
+                                    <img src="./images/PNG/Golden_Roller_Skates_Logo.png" alt="Golden Roller Skates Logo" width="75px" loading="lazy">
+                                </picture>
                             </div>
                             <div>
                                 <!-- <h3 class="testimonial-title fs-2">Golden Roller Skates</h3> -->
@@ -135,7 +172,11 @@
                         </div>
                         <div class="testimonial">
                             <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                                <img src="./images/DoorDash-logo.png" alt="DoorDash Logo" width="75px">
+                                <picture>
+                                    <source srcset="./images/WEBP/DoorDash_Logo.webp" type="image/webp">
+                                    <source srcset="./images/PNG/DoorDash_Logo.png" type="image/png">
+                                    <img src="./images/PNG/DoorDash_Logo.png" alt="DoorDash Logo" width="75px" loading="lazy">
+                                </picture>
                             </div>
                             <div>
                                 <!-- <h3 class="testimonial-title fs-2">DoorDash</h3> -->
@@ -146,7 +187,11 @@
                         </div>
                         <div class="testimonial">
                             <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                                <img src="./images/DoorDash-logo.png" alt="DoorDash Logo" width="75px">
+                                <picture>
+                                    <source srcset="./images/WEBP/DoorDash_Logo.webp" type="image/webp">
+                                    <source srcset="./images/PNG/DoorDash_Logo.png" type="image/png">
+                                    <img src="./images/PNG/DoorDash_Logo.png" alt="DoorDash Logo" width="75px" loading="lazy">
+                                </picture>
                             </div>
                             <div>
                                 <!-- <h3 class="testimonial-title fs-2">DoorDash</h3> -->
@@ -157,7 +202,11 @@
                         </div>
                         <div class="testimonial">
                             <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                                <img src="./images/DoorDash-logo.png" alt="DoorDash Logo" width="75px">
+                                <picture>
+                                    <source srcset="./images/WEBP/DoorDash_Logo.webp" type="image/webp">
+                                    <source srcset="./images/PNG/DoorDash_Logo.png" type="image/png">
+                                    <img src="./images/PNG/DoorDash_Logo.png" alt="DoorDash Logo" width="75px" loading="lazy">
+                                </picture>
                             </div>
                             <div>
                                 <!-- <h3 class="testimonial-title fs-2">DoorDash</h3> -->
