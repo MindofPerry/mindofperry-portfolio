@@ -68,3 +68,36 @@ navLinks.forEach(link => {
         nav.classList.remove("active");
     });
 });
+
+// --- Auto-Scroller For Testimonials & Recommendations ---
+document.addEventListener('DOMContentLoaded', function() {
+    const container = document.querySelector('.testimonial-container');
+    const testimonials = document.querySelectorAll('.testimonial');
+    const testimonialCount = testimonials.length;
+
+    // Duplicate to create an infinite scroll effect
+    container.innerHTML += container.innerHTML;
+    
+    let index = 0;
+    let resetTimeout;
+
+    function scrollTestimonials() {
+        index++;
+        container.style.transition = 'transform 0.5s ease';
+        container.style.transform = `translateX(-${index * 100}%)`;
+
+        if (index >= testimonialCount) {
+            resetTimeout = setTimeout(() => {
+                container.style.transition = 'none';
+                container.style.transform = 'translateX(0)';
+                index = 0;
+            }, 500); // Match this delay with the CSS transition duration
+        }
+    }
+
+    scrollInterval = setInterval(scrollTestimonials, 5000); // Change the interval as needed, in milliseconds
+
+    // Stop scrolling when user hovers over the testimonials
+    container.addEventListener('mouseenter', () => clearInterval(scrollInterval));
+    container.addEventListener('mouseleave', () => scrollInterval = setInterval(scrollTestimonials, 5000));
+});

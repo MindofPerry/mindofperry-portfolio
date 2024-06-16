@@ -105,7 +105,8 @@ header nav a:hover {
 
 h2 {
     color: #167d1a99 !important;
-    text-shadow: #222 3px 3px 7px;
+    font-weight: bold !important;
+    text-shadow: #222 1px 1px 1px;
 }
 
 section {
@@ -117,6 +118,11 @@ section {
     border-radius: 50%;
     padding: 0.2rem;
     background: linear-gradient(to right, #3D9D86, #100DA6);
+    margin-bottom: 20px;
+}
+
+#about {
+    max-width: 850px;
 }
 
 #no-deco {
@@ -134,6 +140,7 @@ section {
     border: 1px solid #ddd;
     padding: 20px;
     transition: transform 0.3s ease;
+    max-width: 500px;
 }
 
 .project:hover {
@@ -141,18 +148,6 @@ section {
 }
 
 .view-repo-button {
-    padding: .6rem;
-    border-width: 2px;
-    background: linear-gradient(to right, #3D9D8699, #100DA699);
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    margin-top: 30px;
-    display: inline-block;
-    margin-top: 0;
-}
-
-.testimonial-button {
     padding: .6rem;
     border-width: 2px;
     background: linear-gradient(to right, #3D9D8699, #100DA699);
@@ -181,6 +176,11 @@ footer {
     margin: 5px;
 }
 
+#skills {
+    max-width: 1000px;
+    margin-top: 30px;
+}
+
 #recognition-text {
     font-weight: bold;
     padding-bottom: 15px;
@@ -190,14 +190,6 @@ footer {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px 20px;
-}
-
-.testimonial-message {
-    font-style: italic;
-}
-
-#testimonial-person {
-    font-weight: 300;
 }
 
 @media screen and (min-width: 768px) {
@@ -290,4 +282,75 @@ body.dark-mode header, body.dark-mode footer {
 
 a:focus {
     outline: 2px solid #3D9D8650;
+}
+
+.testimonial-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+.testimonial {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.icon-square {
+    flex-shrink: 0;
+}
+
+.testimonial-title {
+    margin-bottom: 10px;
+}
+
+.testimonial-message {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+#testimonial-person {
+    font-weight: 300;
+}
+
+.testimonial-button {
+    padding: .6rem;
+    border-width: 2px;
+    background: linear-gradient(to right, #3D9D8699, #100DA699);
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin-top: 30px;
+    display: inline-block;
+    margin-top: 0;
+}
+
+.icon-square img[alt="DoorDash Logo"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .testimonial-container {
+        flex-wrap: nowrap;
+    }
+    .testimonial {
+        min-width: 50%;
+    }
+}
+
+@keyframes scrollTestimonials {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
