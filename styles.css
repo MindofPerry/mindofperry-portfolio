@@ -7,6 +7,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+/*--- Header ---*/
 header {
     background-color: #333;
     color: #fff;
@@ -59,10 +60,6 @@ header nav a:hover {
 
 #darkModeToggle:hover {
     text-decoration: underline;
-}
-
-.break {
-    display: inline;
 }
 
 @media (max-width: 768px) {
@@ -159,19 +156,7 @@ section {
     margin-top: 0;
 }
 
-.github-link, .linkedin-link {
-    text-decoration: none;
-    padding: 5px;
-    font-weight: bold;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
+/* --- Skills --- */
 .skills-item {
     margin: 5px;
 }
@@ -179,6 +164,25 @@ footer {
 #skills {
     max-width: 1000px;
     margin-top: 30px;
+}
+
+/* --- Contact --- */
+.break {
+    display: inline;
+}
+
+.github-link, .linkedin-link {
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
 #recognition-text {
@@ -190,12 +194,6 @@ footer {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px 20px;
-}
-
-@media screen and (min-width: 768px) {
-    blockquote {
-        border-left: none;
-    }
 }
 
 form {
@@ -230,6 +228,7 @@ input[type="submit"].dark-mode-text {
     color: #fff;
 }
 
+/* --- Dark Mode Settings --- */
 .dark-mode #about p {
     color: #fff;
 }

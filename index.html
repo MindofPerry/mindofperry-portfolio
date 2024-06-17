@@ -10,7 +10,33 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-        <link rel="preconnect" href="https://www.google.com">
+
+        <style>
+            #about {
+                max-width: 850px;
+                margin: 0 auto;
+                padding: 20px 20px;
+                text-align: center;
+            }
+            #about h2 {
+                color: #167d1a99;
+                font-weight: bold;
+                text-shadow: #222 1px 1px 1px;
+            }
+            #about .profile-picture {
+                border-radius: 50%;
+                padding: 0.2rem;
+                background: linear-gradient(to right, #3D9D86, #100DA6);
+                margin-bottom: 20px;
+            }
+            #about p {
+                color: #333;
+                font-family: 'Roboto', sans-serif;
+            }
+            #about a#no-deco {
+                text-decoration: none;
+            }
+        </style>
 
         <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="styles.css"></noscript>
@@ -32,7 +58,7 @@
             }
         </script>
 
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="https://www.google.com/recaptcha/api.js" async></script>
         <script src="script.js" defer></script>
     </head>
 
@@ -64,9 +90,9 @@
         <section id="about" class="container">
                 <h2>About Me</h2>
                 <picture>
-                    <source srcset="./images/WEBP/Photo_of_Shane.webp" type="image/webp">
-                    <source srcset="./images/JPEG/Photo_of_Shane.jpeg" type="image/jpeg">
-                    <img class="profile-picture" src="./images/JPEG/Photo_of_Shane.jpeg" alt="Photo of Shane" width="100px">
+                    <source srcset="./images/WEBP/Photo_of_Shane.webp" type="image/webp" width="100px" sizes="100px">
+                    <source srcset="./images/JPEG/Photo_of_Shane.jpeg" type="image/jpeg" width="100px" sizes="100px">
+                    <img class="profile-picture" src="./images/JPEG/Photo_of_Shane.jpeg" alt="Photo of Shane" width="100px" sizes="100px">
                 </picture>
                 <p>With nearly 8 years of diverse experience in Operations Support, Team Leadership, and IT Services, I blend customer service acumen with software development skills.</p>
                 <p>Proficient in HTML, CSS, Python, JavaScript, and a range of tools including Google Sheets, Jira, JQL, SQL, and Slack Workflows.</p>
