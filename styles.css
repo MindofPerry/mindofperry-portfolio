@@ -230,12 +230,16 @@ input[type="submit"].dark-mode-text {
     color: #fff;
 }
 
+.dark-mode #about p {
+    color: #fff;
+}
+
 body.dark-mode {
     background-color: #333;
     color: #fff;
 }
 
-body.dark-mode #testimonials .testimonial-title {
+body.dark-mode #testimonials .testimonial-button {
     color: white;
 }
 
