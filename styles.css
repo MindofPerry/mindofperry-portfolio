@@ -111,17 +111,6 @@ section {
     text-align: center;
 }
 
-.profile-picture {
-    border-radius: 50%;
-    padding: 0.2rem;
-    background: linear-gradient(to right, #3D9D86, #100DA6);
-    margin-bottom: 20px;
-}
-
-#about {
-    max-width: 850px;
-}
-
 #no-deco {
     text-decoration: none;
 }
